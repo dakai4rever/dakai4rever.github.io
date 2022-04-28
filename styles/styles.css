@@ -15,8 +15,10 @@
     padding: 0;
     box-sizing: border-box;
 }
-.wrapper{
+body{
     background-color: var(--bg-color);
+}
+.wrapper{
     width: 100%;
     height: 100vh;
 }
@@ -80,9 +82,11 @@ nav ul li a:hover{
 .banner p{
     color: var(--paragraph);
     font-size: 1rem;
-    font: 500;
+    font-weight: 500;
     font-family: "poppins",sans-serif;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
+    text-align: justify;
+    padding: 0 20%;
 }
 .banner button{
     border: none;
@@ -100,44 +104,9 @@ nav ul li a:hover{
     color: var(--btn-text);
     font-family: "poppins",sans-serif;
 }
-@media only screen and(max-widht: 924px){
-    .banner h1{
-        text-align: center;
-        font-size: 3rem;
-        font-family: "Poppins", sans-serif;
-        color: var(--h_line);
-        margin-top: calc(10% - 2%);
-        margin-bottom: 2%;
-    }
-    .banner p{
-        color: var(--paragraph);
-        font-size: 1rem;
-        font: 500;
-        font-family: "poppins",sans-serif;
-        margin-bottom: 2%;
-    }
-}
-@media only screen and (max-width: 720px) {
-    .banner h1{
-        text-align: center;
-        font-size: 3rem;
-        font-family: "Poppins", sans-serif;
-        color: var(--h_line);
-        margin-top: 40%;
-        margin-bottom: 10%;
-    }
-    .banner p{
-        color: var(--paragraph);
-        font-size: 1rem;
-        font: 500;
-        font-family: "poppins",sans-serif;
-        margin-bottom: 12%;
-    }
-}
 .footer{
-    position: absolute;
+    margin-top: 5%;
     width: 100%;
-    bottom: 0;
     display: flex;
     justify-content: center;
     color: var(--h_line);
@@ -152,4 +121,42 @@ nav ul li a:hover{
 }
 .footer strong{
     font-weight: bold;
+}
+@media only screen and(max-widht: 924px){
+    .banner h1{
+        text-align: center;
+        font-size: 3rem;
+        font-family: "Poppins", sans-serif;
+        color: var(--h_line);
+        margin-top: calc(10% - 2%);
+        margin-bottom: 2%;
+    }
+    .banner p{
+        color: var(--paragraph);
+        font-size: 1rem;
+        font-weight: 500;
+        font-family: "poppins",sans-serif;
+        margin-bottom: 2%;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .banner h1{
+        text-align: center;
+        font-size: 3rem;
+        font-family: "Poppins", sans-serif;
+        color: var(--h_line);
+        margin-top: 40%;
+        margin-bottom: 10%;
+    }
+    .banner p{
+            color: var(--paragraph);
+            font-size: 1rem;
+            padding: 0 5%;
+            font-weight: 500;
+            font-family: "poppins",sans-serif;
+            margin-bottom: 12%;
+    }
+    .footer{
+        margin-top: 25%;
+    }
 }
