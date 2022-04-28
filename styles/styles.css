@@ -1,0 +1,121 @@
+:root{
+    --bg-color : #16161a;
+    --main: #fffffe;
+    --secondary: #72757e;
+    --stroke: #010101;
+    --h_line : #fffffe;
+    --paragraph: #94a1b2;
+    --btn-color: #7f5af0;
+    --highline: #7f5af0;
+    --btn-text: #fffffe;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper{
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 100vh;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+}
+.header h1{
+    font-size: 1.2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--h_line);
+    letter-spacing: 1.7px;
+    padding: 33px 0;
+    font-weight: 400;
+    opacity: 0.7;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    list-style: none;
+    padding: 35px 10px;
+}
+nav ul li a{
+    font-family: "Poppins", sans-serif;
+    color: var(--h_line);
+    opacity: 0.7;
+    letter-spacing: 0;
+    font-size: 1rem ;
+    font-weight: 250;
+    text-decoration: none;
+}
+nav ul li a:not(:last-child){
+    padding: 15px 15px;
+}
+nav ul li a:hover{
+    opacity: 1;
+}
+.sct1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.banner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.banner h1{
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    color: var(--h_line);
+    margin-top: calc(10% - 2%);
+    margin-bottom: 2%;
+}
+.banner p{
+    color: var(--paragraph);
+    font-size: 1rem;
+    font: 500;
+    font-family: "poppins",sans-serif;
+    margin-bottom: 2%;
+}
+.banner button{
+    border: none;
+    background-color: var(--highline);
+    border-radius: 3px;
+    opacity: 0.8;
+    cursor: pointer;
+    padding: 10px 15px;
+}
+.banner button:hover{
+    opacity: 1;
+}
+.banner button a{
+    text-decoration: none;
+    color: var(--btn-text);
+    font-family: "poppins",sans-serif;
+}
+.footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    color: var(--h_line);
+    font-family: "Poppins", sans-serif;
+    font-size: 0.3rem;
+    font-weight: 10;
+    letter-spacing: 0.7;
+    opacity: 0.7;
+}
+.footer h6{
+    margin-bottom: 25px;
+}
+.footer strong{
+    font-weight: bold;
+}
