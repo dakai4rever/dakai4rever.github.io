@@ -66,16 +66,21 @@ nav ul li a:hover{
     flex-direction: column;
     align-items: center;
     width: 100%;
+    height: calc(100vh - 33px);
 }
 .sct2{
-    margin-top: 15%;
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 33px);
+}
+.sct3   {
+    width: 100%;
+    height: calc(100vh - 33px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 
 .banner{
     width: 100%;
@@ -86,7 +91,7 @@ nav ul li a:hover{
 }
 .banner h1{
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-family: "Poppins", sans-serif;
     color: var(--h_line);
     margin-top: calc(10% - 2%);
@@ -98,7 +103,7 @@ nav ul li a:hover{
     font-weight: 500;
     font-family: "poppins",sans-serif;
     margin-bottom: 3%;
-    text-align: justify;
+    text-align: start;
     padding: 0 20%;
 }
 .banner button{
@@ -113,11 +118,78 @@ nav ul li a:hover{
     opacity: 1;
 }
 .banner button a{
+    font-size: 0.7rem;
     text-decoration: none;
     color: var(--btn-text);
     font-family: "poppins",sans-serif;
 }
+.skills{
+    padding: 0 15%;
+}
+.skills h1{
+    color: var(--h_line);
+    font-family: "poppins",sans-serif;
+    margin-bottom: 5%;
+}
+    
+.container-data{
+    margin-bottom: 20px;
+    background-color: var(--btn-color);
+    padding: 0.8rem 10px;
+    border-radius: 7px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
 
+.container-data span{
+    color: var(--h_line);
+    margin: 0 20px 0 0;
+    font-family: "poppins",sans-serif;
+    font-size: 1rem;
+}
+.container-data .progress-bar{
+    width: 70%;
+    position: relative;
+    height: 10px;
+    background-color: var(--secondary);
+    border-radius: 2em;
+    overflow: hidden;
+}
+.progress-bar-100::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--h_line);
+}
+.progress-bar-70::before{
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    background-color: var(--h_line);
+}
+.progress-bar-40::before{
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    background-color: var(--h_line);
+}
+.progress-bar-45::before{
+    content: '';
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    background-color: var(--h_line);
+}
+.progress-bar-30::before{
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: var(--h_line);
+}
 .footer{
     width: 100%;
     margin-top: 5%;
@@ -155,11 +227,11 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
 }
-.about h3{
+.about h2{
+    margin: 15% 0;
     font-size: 1.7rem;
     color: var(--h_line);
     font-family: "poppins",sans-serif;
-    margin-bottom: 10%;
 }
 .about-info p{
     color: var(--paragraph);
@@ -187,8 +259,8 @@ nav ul li a:hover{
         padding: 0 10%;
     }
     .banner h1{
-        text-align: center;
-        font-size: 3rem;
+        text-align: start;
+        font-size: 2rem;
         font-family: "Poppins", sans-serif;
         color: var(--h_line);
         margin-top: 40%;
@@ -196,14 +268,34 @@ nav ul li a:hover{
         padding: 0 10px;
     }
     .banner p{
+            text-align: justify;
             color: var(--paragraph);
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             padding: 0 10%;
             font-weight: 500;
             font-family: "poppins",sans-serif;
             margin-bottom: 12%;
     }
+    .banner button a{
+        font-size: 1rem;
+        text-decoration: none;
+        color: var(--btn-text);
+        font-family: "poppins",sans-serif;
+    }
+    .sct2{
+        height: 50vh;
+    }
+    .skills{
+        padding: 0  10%;
+    }
+    .container-data{
+        display: grid;
+        grid-template-columns: 2fr 3fr 1fr;
+        margin-bottom: 30px;
+        padding: 1rem 10px;
+    }
     .about-info p{
+        word-spacing: 2px;
         color: var(--paragraph);
         font-family: "poppins",sans-serif;
         margin-bottom: 12%;
